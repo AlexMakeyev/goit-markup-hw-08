@@ -4,3 +4,17 @@
 .logo-studio {
   color: black;
 }
+.site-nav {
+  color: black;
+}
+.site-nav:hover,
+.site-nav:focus {
+  color: #2196f3;
+}
+.pf-buttons {
+  color: black;
+}
+.pf-buttons:active,
+.pf-buttons:hover {
+  color: #2196f3;
+}
