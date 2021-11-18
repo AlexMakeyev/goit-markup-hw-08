@@ -12,18 +12,17 @@ body {
   background-color: #ffffff;
   color: #757575;
 }
-ul {
+.list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
 }
-h2 {
+.h2-style {
   color: #212121;
 }
-b {
-  color: #212121;
-}
+
 /* логотип */
 .logo-web {
   color: #2196f3;
@@ -55,7 +54,9 @@ b {
 .h1-section {
   background-color: #2f303a;
   color: #ffffff;
+  text-transform: uppercase;
 }
+
 /* скрытые объекты */
 .hidden {
   display: none;
@@ -101,6 +102,7 @@ b {
   background-color: #ffffff;
   color: #2196f2;
 }
+
 /* стили footer */
 footer {
   background-color: #2f303a;
