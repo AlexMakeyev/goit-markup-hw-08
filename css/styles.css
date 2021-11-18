@@ -1,35 +1,69 @@
-/*стили header*/
-.header {
-  width: 1800px;
-  height: 80px;
-  display: flex;
-  flex-direction: row;
-  background-color: #ffff;
+/* бэк цвет #2F303A */
+/* цвет заголовков #212121 */
+/* акцент #2196f3*/
+/* цвет текста блоков #757575 */
+/* белый цвет #ffffff*/
+/* доп цвет rgba(255, 255, 255, 0.6) */
+/* цвет блок team/button #F5F4FA */
+/* цвет блоков #E5E5E5 */
+
+/* общие стили */
+body {
+  background-color: #ffffff;
+  color: #757575;
 }
-.nav-ul-dir a {
-  display: flex;
-  flex-direction: row;
+ul {
+  list-style: none;
 }
+.link {
+  text-decoration: none;
+}
+h2 {
+  color: #212121;
+}
+b {
+  color: #212121;
+}
+/* логотип */
 .logo-web {
   color: #2196f3;
 }
 .logo-studio {
   color: black;
 }
-.site-nav {
-  color: black;
+.logo-studio1 {
+  color: #ffffff;
 }
-.site-nav:hover,
-.site-nav:focus {
+/* стили header */
+.header {
+  width: 1800px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.site-nav a {
+  color: #212121;
+}
+.site-nav a:hover,
+.site-nav a:focus {
   color: #2196f3;
 }
 
-/*стили main*/
-
-/*стилизация кнопок*/
+/* стили main */
+/* стилизация секции h1 */
+.h1-section {
+  background-color: #2f303a;
+  color: #ffffff;
+}
+/* скрытые объекты */
+.hidden {
+  display: none;
+}
+/* стилизация кнопок */
 .pf-buttons {
   color: black;
-  background-color: #ffff;
+  background-color: #f5f4fa;
 }
 .pf-buttons:hover,
 .pf-buttons:focus {
@@ -55,4 +89,25 @@
 .pf-b-size-mar {
   width: 130px;
   height: 38px;
+}
+.s-button {
+  width: 200;
+  height: 50;
+  background-color: #2196f2;
+  color: #ffffff;
+}
+.s-button:hover,
+.s-button:focus {
+  background-color: #ffffff;
+  color: #2196f2;
+}
+/* стили footer */
+footer {
+  background-color: #2f303a;
+}
+.f-text {
+  color: rgba(255, 255, 255, 0.6);
+}
+.f-adr {
+  color: #ffffff;
 }
