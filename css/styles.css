@@ -13,8 +13,9 @@
 }
 .pf-buttons {
   color: black;
+  background-color: #ffff;
 }
-.pf-buttons:active,
 .pf-buttons:hover {
-  color: #2196f3;
+  background-color: #2196f3;
+  color: #ffff;
 }
