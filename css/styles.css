@@ -1,3 +1,12 @@
+/*стили header*/
+header {
+  width: 1800px;
+  height: 80px;
+}
+.nav-dir a li ul {
+  display: flex;
+  flex-direction: row;
+}
 .logo-web {
   color: #2196f3;
 }
@@ -11,6 +20,10 @@
 .site-nav:focus {
   color: #2196f3;
 }
+
+/*стили main*/
+
+/*стилизация кнопок*/
 .pf-buttons {
   color: black;
   background-color: #ffff;
@@ -18,4 +31,24 @@
 .pf-buttons:hover {
   background-color: #2196f3;
   color: #ffff;
+}
+.pf-b-size-all {
+  width: 73px;
+  height: 38px;
+}
+.pf-b-size-web {
+  width: 128px;
+  height: 38px;
+}
+.pf-b-size-app {
+  width: 145px;
+  height: 38px;
+}
+.pf-b-size-des {
+  width: 103px;
+  height: 38px;
+}
+.pf-b-size-mar {
+  width: 130px;
+  height: 38px;
 }
