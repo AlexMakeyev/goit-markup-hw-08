@@ -11,6 +11,7 @@
 body {
   background-color: #ffffff;
   color: #757575;
+  font-family: Roboto;
 }
 .list {
   list-style: none;
@@ -18,9 +19,6 @@ body {
 
 .link {
   text-decoration: none;
-}
-.h2-style {
-  color: #212121;
 }
 
 /* логотип */
@@ -102,14 +100,26 @@ body {
   background-color: #ffffff;
   color: #2196f2;
 }
+.main-txt {
+  color: #212121;
+}
+.h2-style {
+  color: #212121;
+}
+.h2-style-stud {
+  text-transform: uppercase;
+  color: #212121;
+}
 
 /* стили footer */
-footer {
+.footer {
   background-color: #2f303a;
 }
 .f-text {
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
 }
 .f-adr {
   color: #ffffff;
+  font-style: normal;
 }
