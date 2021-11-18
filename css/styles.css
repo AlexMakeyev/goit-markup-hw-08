@@ -72,22 +72,27 @@ body {
 .pf-b-size-all {
   width: 73px;
   height: 38px;
+  background-color: #f5f4fa;
 }
 .pf-b-size-web {
   width: 128px;
   height: 38px;
+  background-color: #f5f4fa;
 }
 .pf-b-size-app {
   width: 145px;
   height: 38px;
+  background-color: #f5f4fa;
 }
 .pf-b-size-des {
   width: 103px;
   height: 38px;
+  background-color: #f5f4fa;
 }
 .pf-b-size-mar {
   width: 130px;
   height: 38px;
+  background-color: #f5f4fa;
 }
 .s-button {
   width: 200;
@@ -109,6 +114,9 @@ body {
 .h2-style-stud {
   text-transform: uppercase;
   color: #212121;
+}
+.team-section {
+  background-color: #f5f4fa;
 }
 
 /* стили footer */
