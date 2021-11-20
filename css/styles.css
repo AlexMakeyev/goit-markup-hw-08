@@ -12,6 +12,7 @@ body {
   background-color: #ffffff;
   color: #757575;
   font-family: "Roboto", sans-serif;
+  width: 1600px;
 }
 .list {
   list-style: none;
@@ -46,10 +47,8 @@ body {
   font-size: 26px;
   line-height: 31px;
 }
-
 /* стили header */
 .header {
-  width: 1600px;
   height: 80px;
 }
 .site-nav a {
@@ -74,6 +73,9 @@ body {
 .info a:focus {
   color: #2196f3;
 }
+.pos {
+  margin: 24px, 0, 25px, 0;
+}
 
 /* стили main */
 /* стилизация секции h1 */
@@ -81,6 +83,7 @@ body {
   background-color: #2f303a;
   color: #ffffff;
   text-transform: uppercase;
+  height: 600px;
 }
 
 /* скрытые объекты */
