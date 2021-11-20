@@ -25,19 +25,23 @@ body {
 .logo-web {
   color: #2196f3;
   font-family: "Raleway", sans-serif;
+  font-weight: 700;
 }
 .logo-studio {
   color: black;
   font-family: "Raleway", sans-serif;
+  font-weight: 700;
 }
 .logo-studio1 {
   color: #ffffff;
   font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.dir {
+  display: flex;
+  flex-direction: row;
 }
 /* стили header */
-.header {
-  display: inline;
-}
 
 .site-nav a {
   color: #212121;
@@ -126,8 +130,10 @@ body {
 .f-text {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  font-weight: 400;
 }
 .f-adr {
   color: #ffffff;
   font-style: normal;
+  font-weight: 400;
 }
