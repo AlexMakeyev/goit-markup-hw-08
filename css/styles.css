@@ -39,6 +39,8 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 .logo-studio {
   color: black;
@@ -46,6 +48,8 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 .logo-studio1 {
   color: #ffffff;
@@ -53,11 +57,16 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.logo-pos {
+  margin-top: 24px;
+  margin-left: 215px;
+  width: 145px;
 }
 /* стили header */
-.header {
-  height: 80px;
-}
+
 .site-nav a {
   color: #212121;
   font-weight: 500;
@@ -80,16 +89,18 @@ body {
 .info a:focus {
   color: #2196f3;
 }
-.pos {
-  margin: 24px, 0, 25px, 0;
+.nav-pos {
+  margin-top: 32px;
+  margin-left: 93px;
+  box-sizing: content-box;
 }
-
 /* стили main */
 /* стилизация секции h1 */
 .h1-section {
   background-color: #2f303a;
   color: #ffffff;
   height: 600px;
+  margin-top: 25px;
 }
 .h1-pos {
   font-weight: 900;
