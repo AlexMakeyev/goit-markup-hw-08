@@ -104,26 +104,31 @@ body {
   width: 73px;
   height: 38px;
   background-color: #f5f4fa;
+  border-radius: 4px;
 }
 .pf-b-size-web {
   width: 128px;
   height: 38px;
   background-color: #f5f4fa;
+  border-radius: 4px;
 }
 .pf-b-size-app {
   width: 145px;
   height: 38px;
   background-color: #f5f4fa;
+  border-radius: 4px;
 }
 .pf-b-size-des {
   width: 103px;
   height: 38px;
   background-color: #f5f4fa;
+  border-radius: 4px;
 }
 .pf-b-size-mar {
   width: 130px;
   height: 38px;
   background-color: #f5f4fa;
+  border-radius: 4px;
 }
 .s-button {
   width: 200;
