@@ -5,7 +5,7 @@
 }
 /* бэк цвет #2F303A */
 /* цвет заголовков #212121 */
-/* акцент #2196f3*/
+/* акцент #2196f3 #188CE8*/
 /* цвет текста блоков #757575 */
 /* белый цвет #ffffff*/
 /* доп цвет rgba(255, 255, 255, 0.6) */
@@ -17,7 +17,6 @@ body {
   background-color: #ffffff;
   color: #757575;
   font-family: "Roboto", sans-serif;
-  width: 1600px;
   display: flex;
   flex-direction: column;
 }
@@ -28,45 +27,47 @@ body {
 .link {
   text-decoration: none;
 }
+
+/* логотип */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  width: 145px;
+  margin-top: 24px;
+  margin-left: 215px;
+  margin-bottom: 25px;
+}
+.logo-web {
+  color: #2196f3;
+}
+.logo-studio {
+  color: black;
+}
+.logo-studio-footer {
+  color: #ffffff;
+}
+
+/* стили header */
+.header {
+  display: flex;
+  flex-direction: row;
+}
 .dir {
   display: flex;
   flex-direction: row;
 }
-/* логотип */
-.logo-web {
-  color: #2196f3;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  text-align: center;
+.nav {
+  display: flex;
+  flex-direction: row;
+  width: 294px;
+  margin-top: 32px;
+  margin-left: 93px;
+  margin-bottom: 32px;
 }
-.logo-studio {
-  color: black;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-.logo-studio1 {
-  color: #ffffff;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-.logo-pos {
-  margin-top: 24px;
-  margin-left: 215px;
-  width: 145px;
-}
-/* стили header */
-
 .site-nav a {
   color: #212121;
   font-weight: 500;
@@ -88,11 +89,6 @@ body {
 .info a:hover,
 .info a:focus {
   color: #2196f3;
-}
-.nav-pos {
-  margin-top: 32px;
-  margin-left: 93px;
-  box-sizing: content-box;
 }
 /* стили main */
 /* стилизация секции h1 */
@@ -120,41 +116,34 @@ body {
 .pf-buttons {
   color: black;
   background-color: #f5f4fa;
+  border: 0px;
+  border-radius: 4px;
 }
 .pf-buttons:hover,
-.pf-buttons:focus {
-  background-color: #2196f3;
+.pf-buttons:focus,
+.pf-buttons:active {
+  background-color: #188ce8;
   color: #ffff;
 }
 .pf-b-size-all {
   width: 73px;
   height: 38px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
 }
 .pf-b-size-web {
   width: 128px;
   height: 38px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
 }
 .pf-b-size-app {
   width: 145px;
   height: 38px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
 }
 .pf-b-size-des {
   width: 103px;
   height: 38px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
 }
 .pf-b-size-mar {
   width: 130px;
   height: 38px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
 }
 .s-button {
   width: 200px;
@@ -170,9 +159,10 @@ body {
   letter-spacing: 0.06em;
 }
 .s-button:hover,
-.s-button:focus {
-  background-color: #ffffff;
-  color: #2196f2;
+.s-button:focus,
+.s-button:active {
+  background-color: #188ce8;
+  color: #fff;
 }
 .main-txt {
   color: #212121;
@@ -189,16 +179,17 @@ body {
 }
 
 /* стили footer */
+.adress {
+  font-style: normal;
+  font-weight: 400;
+}
 .footer {
   background-color: #2f303a;
 }
-.f-text {
+
+.footer-text {
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  font-weight: 400;
 }
-.f-adr {
+.footer-adr {
   color: #ffffff;
-  font-style: normal;
-  font-weight: 400;
 }
