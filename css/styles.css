@@ -1,7 +1,22 @@
+html {
+  box-sizing: border-box;
+}
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+:root {
+  --body-color: #ffffff;
+  --back-color: #2f303a;
+  --heading-color: #212121;
+  --accent-color: #2196f3;
+  --alt-accent: #188ce8;
+  --block-color: #e5e5e5;
+  --text-block: #757575;
+  --spec-color: rgba(255, 255, 255, 0.6);
+  --team-button-color: #f5f4fa;
+  --logo-add-color: #000000;
 }
 /* бэк цвет #2F303A */
 /* цвет заголовков #212121 */
@@ -14,11 +29,9 @@
 
 /* общие стили */
 body {
-  background-color: #ffffff;
-  color: #757575;
+  background-color: var(--block-color);
+  color: var(--text-block);
   font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
 }
 .list {
   list-style: none;
@@ -27,49 +40,38 @@ body {
 .link {
   text-decoration: none;
 }
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 /* логотип */
+.header {
+  background-color: var(--body-color);
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  text-align: center;
   width: 145px;
-  margin-top: 24px;
-  margin-left: 215px;
-  margin-bottom: 25px;
 }
 .logo-web {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .logo-studio {
-  color: black;
+  color: var(--logo-add-color);
 }
 .logo-studio-footer {
-  color: #ffffff;
+  color: var(--body-color);
 }
 
 /* стили header */
-.header {
-  display: flex;
-  flex-direction: row;
-}
-.dir {
-  display: flex;
-  flex-direction: row;
-}
-.nav {
-  display: flex;
-  flex-direction: row;
-  width: 294px;
-  margin-top: 32px;
-  margin-left: 93px;
-  margin-bottom: 32px;
-}
+
 .site-nav a {
-  color: #212121;
+  color: var(--heading-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -77,10 +79,10 @@ body {
 }
 .site-nav a:hover,
 .site-nav a:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .info a {
-  color: #757575;
+  color: var(--text-block);
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -88,25 +90,19 @@ body {
 }
 .info a:hover,
 .info a:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /* стили main */
 /* стилизация секции h1 */
 .h1-section {
-  background-color: #2f303a;
-  color: #ffffff;
+  background-color: var(--back-color);
+  color: var(--body-color);
   height: 600px;
-  margin-top: 25px;
-}
-.h1-pos {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
-  height: 120px;
 }
 /* скрытые объекты */
 .hidden {
@@ -115,15 +111,16 @@ body {
 /* стилизация кнопок */
 .pf-buttons {
   color: black;
-  background-color: #f5f4fa;
+  background-color: var(--team-button-color);
   border: 0px;
   border-radius: 4px;
+  font-family: "roboto", sans-serif;
 }
 .pf-buttons:hover,
 .pf-buttons:focus,
 .pf-buttons:active {
-  background-color: #188ce8;
-  color: #ffff;
+  background-color: var(--alt-accent);
+  color: var(--body-color);
 }
 .pf-b-size-all {
   width: 73px;
@@ -148,34 +145,35 @@ body {
 .s-button {
   width: 200px;
   height: 50px;
-  background-color: #2196f2;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--body-color);
+  font-family: "roboto", sans-serif;
+  border: 0;
   border-radius: 4px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 .s-button:hover,
 .s-button:focus,
 .s-button:active {
-  background-color: #188ce8;
-  color: #fff;
+  background-color: var(--alt-accent);
+  color: var(--body-color);
 }
 .main-txt {
-  color: #212121;
+  color: var(--heading-color);
 }
-.h2-style {
-  color: #212121;
+
+.section-title {
+  color: var(--heading-color);
 }
-.h2-style-stud {
+.details-section-title {
   text-transform: uppercase;
-  color: #212121;
+  color: var(--heading-color);
 }
 .team-section {
-  background-color: #f5f4fa;
+  background-color: var(--team-button-color);
 }
 
 /* стили footer */
@@ -184,12 +182,12 @@ body {
   font-weight: 400;
 }
 .footer {
-  background-color: #2f303a;
+  background-color: var(--back-color);
 }
 
 .footer-text {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--spec-color);
 }
 .footer-adr {
-  color: #ffffff;
+  color: var(--body-color);
 }
