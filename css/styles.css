@@ -123,8 +123,7 @@ body {
   letter-spacing: 0.03em;
 }
 .pf-buttons:hover,
-.pf-buttons:focus,
-.pf-buttons:active {
+.pf-buttons:focus {
   background-color: var(--alt-accent);
   color: var(--body-color);
 }
@@ -163,8 +162,7 @@ body {
   text-align: center;
 }
 .s-button:hover,
-.s-button:focus,
-.s-button:active {
+.s-button:focus {
   background-color: var(--alt-accent);
   color: var(--body-color);
 }
@@ -179,6 +177,19 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+.main-txt {
+  color: var(--heading-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+.main-desc {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
   letter-spacing: 0.03em;
 }
 
@@ -215,6 +226,10 @@ body {
 }
 .footer {
   background-color: var(--back-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .footer-text {
@@ -222,4 +237,8 @@ body {
 }
 .footer-adr {
   color: var(--body-color);
+}
+.adress a:hover,
+.adress a:focus {
+  color: var(--alt-accent);
 }
