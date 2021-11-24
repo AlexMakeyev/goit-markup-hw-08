@@ -129,7 +129,6 @@ body {
   align-items: center;
   flex-direction: column;
   margin-top: 0;
-  margin-bottom: 94px;
   background-color: var(--back-color);
   text-align: center;
 }
@@ -174,7 +173,8 @@ body {
 }
 .details-section {
   margin-top: 0;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -197,7 +197,7 @@ body {
 }
 .about-section {
   margin-top: 0;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .about-list {
   display: flex;
@@ -211,12 +211,12 @@ body {
 .team-section {
   background-color: var(--team-button-color);
   margin-top: 0;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .team-section-title {
   color: var(--heading-color);
   margin-top: 0;
-  padding-top: 94px;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
