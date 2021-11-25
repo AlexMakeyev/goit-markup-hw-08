@@ -281,7 +281,7 @@ body {
   padding: 6px, 22px;
   border: 0px;
   border-radius: 4px;
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -334,7 +334,7 @@ body {
   border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--body-color);
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -363,11 +363,21 @@ body {
 .main-pf {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  margin-top: 0;
   padding-bottom: 94px;
   align-items: center;
 }
 .pf-item {
   width: 370px;
-  margin: 0px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px;
+  border-bottom-color: var(--border-color);
+  border-bottom-style: solid;
+}
+.pf-item:nth-child(3n) {
+  margin-right: 0;
+}
+.pf-item:nth-child(n + 7) {
+  margin-bottom: 0;
 }
