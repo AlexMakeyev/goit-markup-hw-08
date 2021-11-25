@@ -17,6 +17,7 @@ html {
   --spec-color: rgba(255, 255, 255, 0.6);
   --team-button-color: #f5f4fa;
   --logo-add-color: #000000;
+  --border-color: #ececec;
 }
 /* бэк цвет #2F303A */
 /* цвет заголовков #212121 */
@@ -55,6 +56,8 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-color);
   background-color: var(--body-color);
 }
 .logo {
@@ -275,6 +278,7 @@ body {
 .pf-buttons {
   color: black;
   background-color: var(--team-button-color);
+  padding: 6px, 22px;
   border: 0px;
   border-radius: 4px;
   font-family: "roboto", sans-serif;
@@ -310,6 +314,15 @@ body {
   width: 130px;
   height: 38px;
 }
+.button-item .pf-buttons + .pf-buttons {
+  margin-left: 8px;
+}
+.button-item {
+  padding-top: 94px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+/* studio button */
 .s-button {
   align-self: center;
   width: 200px;
@@ -317,6 +330,7 @@ body {
   border: 0;
   margin-top: 0;
   margin-bottom: 200px;
+  padding: 10px, 32px;
   border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--body-color);
@@ -345,4 +359,15 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+.main-pf {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  padding-bottom: 94px;
+  align-items: center;
+}
+.pf-item {
+  width: 370px;
+  margin: 0px;
 }
