@@ -43,24 +43,23 @@ body {
   text-decoration: none;
 }
 .container {
-  margin-left: 0px;
-  margin-right: 0px;
-  width: 1600px;
-  padding-left: 215px;
-  padding-right: 215px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* стили header */
 /* логотип */
 .header {
   display: flex;
   align-items: center;
-  margin: 0;
   border-bottom: 1px;
   background-color: var(--body-color);
 }
 .logo {
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -93,9 +92,9 @@ body {
 }
 .site-nav {
   display: flex;
-  margin-top: 32px;
+  padding-top: 32px;
   margin-left: 93px;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 .site-nav .nav-item + .nav-item {
   margin-left: 50px;
@@ -103,8 +102,8 @@ body {
 /* info */
 .info {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-left: auto;
 }
 .info .nav-item + .nav-item {
@@ -125,9 +124,6 @@ body {
 /* стили main */
 /* стилизация секции h1 */
 .h1-section {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   margin-top: 0;
   background-color: var(--back-color);
   text-align: center;
@@ -142,7 +138,6 @@ body {
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  align-self: center;
   width: 696px;
 }
 /* details section */
@@ -168,7 +163,6 @@ body {
   margin-left: 30px;
 }
 .det-item {
-  align-self: center;
   width: 270px;
 }
 .details-section {
@@ -249,7 +243,6 @@ body {
 
 /* стили footer */
 .adress {
-  display: inline-block;
   font-style: normal;
   font-weight: 400;
 }
