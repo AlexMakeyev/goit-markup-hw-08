@@ -230,7 +230,8 @@ body {
   margin-left: 30px;
 }
 .team-txt {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--heading-color);
   font-weight: 500;
   font-size: 16px;
@@ -238,13 +239,16 @@ body {
   letter-spacing: 0.03em;
 }
 .team-pos {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
-
+.team-img {
+  margin-bottom: 30px;
+}
 /* стили footer */
 .adress {
   font-style: normal;
@@ -349,6 +353,9 @@ body {
 }
 /* porfolio */
 .main-txt {
+  margin-top: 0;
+  margin-bottom: 4px;
+  padding-left: 24px;
   color: var(--heading-color);
   font-style: normal;
   font-weight: 700;
@@ -356,6 +363,9 @@ body {
   line-height: 2;
 }
 .main-desc {
+  margin-top: 0;
+  padding-left: 24px;
+  padding-bottom: 20px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
@@ -381,4 +391,8 @@ body {
 }
 .pf-item:nth-child(n + 7) {
   margin-bottom: 0;
+}
+.pf-img {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
