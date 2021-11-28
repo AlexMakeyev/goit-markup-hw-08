@@ -401,6 +401,11 @@ body {
 .pf-item:nth-child(n + 7) {
   margin-bottom: 0;
 }
+.main-pf :hover,
+.main-pf :focus {
+  background-color: var(--block-color);
+  color: var(--alt-accent);
+}
 .pf-img {
   margin-top: 0;
   margin-bottom: 20px;
