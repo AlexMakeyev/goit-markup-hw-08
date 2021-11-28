@@ -359,12 +359,7 @@ body {
   background-color: var(--alt-accent);
   color: var(--body-color);
 }
-/* porfolio */
-/* .pf-section {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-} */
+
 .pf-title {
   margin-top: 0;
   margin-bottom: 4px;
