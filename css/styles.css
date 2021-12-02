@@ -34,14 +34,26 @@ body {
   color: var(--text-block);
   font-family: "Roboto", sans-serif;
 }
-.list {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
   padding: 0;
   margin: 0;
-  list-style: none;
 }
-
-.link {
+a {
   text-decoration: none;
+}
+img {
+  display: block;
 }
 .container {
   margin-left: auto;
@@ -267,7 +279,7 @@ body {
   background-color: var(--back-color);
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.5;
   letter-spacing: 0.03em;
 }
 .footer-logo {
@@ -401,11 +413,11 @@ body {
 .pf-item:nth-child(n + 7) {
   margin-bottom: 0;
 }
-.main-pf :hover,
+/* .main-pf :hover,
 .main-pf :focus {
   background-color: var(--block-color);
   color: var(--alt-accent);
-}
+} */
 .pf-img {
   margin-top: 0;
   margin-bottom: 20px;
