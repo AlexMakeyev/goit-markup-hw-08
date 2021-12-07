@@ -145,7 +145,7 @@ img {
   background-image: url("/images/hero-back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: fixed;
+  background-attachment: scroll;
 }
 /* .hero-back {
   background-image: ;
