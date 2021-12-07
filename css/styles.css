@@ -142,7 +142,14 @@ img {
   margin-top: 0;
   background-color: var(--back-color);
   text-align: center;
+  background-image: url("/images/hero-back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
 }
+/* .hero-back {
+  background-image: ;
+} */
 .h1-text {
   margin-top: 0;
   margin-bottom: 30px;
