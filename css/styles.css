@@ -470,11 +470,11 @@ img {
 .pf-item:nth-child(n + 7) {
   margin-bottom: 0;
 }
-/* .main-pf :hover,
-.main-pf :focus {
-  background-color: var(--block-color);
-  color: var(--alt-accent);
-} */
+.pf-deco :hover,
+.pf-deco :focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .pf-img {
   margin-top: 0;
   margin-bottom: 20px;
