@@ -314,12 +314,22 @@ img {
   text-align: center;
 }
 .clients-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
-  background-color: violet;
+  border: 1px;
+  border-color: var(--border-color);
+  border-style: solid;
 }
 .clients .clients-item + .clients-item {
   margin-left: 30px;
+}
+.icon-client {
+  width: 106px;
+  height: 60px;
+  fill: var(--text-block);
 }
 /* стили footer */
 .adress {
@@ -374,6 +384,8 @@ img {
 .pf-buttons:focus {
   background-color: var(--alt-accent);
   color: var(--body-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .pf-b-size-all {
   width: 73px;
@@ -428,7 +440,7 @@ img {
   color: var(--body-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
-
+/* стили портфолио */
 .pf-title {
   margin-top: 0;
   margin-bottom: 4px;
