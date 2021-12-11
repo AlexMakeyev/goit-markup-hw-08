@@ -124,14 +124,18 @@ img {
 .info .info-item + .info-item {
   margin-left: 50px;
 }
-.info-item::before {
-  content: "";
-  display: inline-block;
+.info-icon {
   margin-right: 10px;
   width: 16px;
   height: 12px;
-  background-color: violet;
+  fill: var(--text-block);
 }
+/* .info-icon::before {
+  content: "";
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+} */
 .info a {
   color: var(--text-block);
   font-weight: 500;
@@ -140,9 +144,13 @@ img {
   letter-spacing: 0.02em;
 }
 .info a:hover,
-.info a:focus {
+.info a:focus,
+.info-icon:hover,
+.info-icon:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
+
 /* стили main */
 /* стилизация секции h1 */
 .hero-section {
@@ -198,14 +206,17 @@ img {
 .det-item {
   width: 270px;
 }
-.det-item::before {
-  content: "";
-  display: block;
-  height: 120px;
-  background-color: var(--team-button-color);
+
+.det-svg {
   margin-top: 0;
   margin-bottom: 30px;
+  padding-top: 25px;
+  padding-left: 100px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--team-button-color);
 }
+
 .details-section {
   margin-top: 0;
   padding-top: 94px;
@@ -280,7 +291,6 @@ img {
 .team-pos {
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.17;
@@ -295,14 +305,27 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-/* .team-item::after {
-  content: "";
-  display: block;
-  width: 206px;
-  height: 44px;
+.team-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 16px;
-  margin-bottom: 30px;
-} */
+  padding-bottom: 30px;
+}
+.team-contacts .team-link + .team-link {
+  margin-left: 10px;
+}
+.team-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.team-link > a {
+  display: block;
+}
+.team-icon {
+  fill: var(--back-color);
+}
 .clients-section {
   margin-top: 0;
   padding-top: 94px;
@@ -319,18 +342,24 @@ img {
   justify-content: center;
   width: 170px;
   height: 92px;
-  border: 1px;
-  border-color: var(--border-color);
   border-style: solid;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 .clients .clients-item + .clients-item {
   margin-left: 30px;
 }
 .icon-client {
-  width: 106px;
-  height: 60px;
   fill: var(--text-block);
 }
+.icon-client:hover,
+.icon-client:focus,
+.clients-item:hover,
+.clients-item:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 /* стили footer */
 .adress {
   font-style: normal;
