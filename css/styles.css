@@ -144,10 +144,11 @@ img {
   letter-spacing: 0.02em;
 }
 .info a:hover,
-.info a:focus,
-.info-icon:hover,
-.info-icon:focus {
+.info a:focus {
   color: var(--accent-color);
+}
+.info a:hover svg,
+.info a:focus svg {
   fill: var(--accent-color);
 }
 
@@ -315,14 +316,7 @@ img {
 .team-contacts li + li {
   margin-left: 10px;
 }
-/* .team-link-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-} */
+
 .team-social-link {
   display: flex;
   justify-content: center;
@@ -354,25 +348,9 @@ img {
 .clients {
   display: flex;
 }
-.clients-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-}
-.clients .clients-item + .clients-item {
+.clients li + li {
   margin-left: 30px;
 }
-/* .icon-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 106px;
-  height: 60px;
-} */
 
 .client-1,
 .client-2,
@@ -406,11 +384,21 @@ img {
   width: 94px;
   height: 44px;
 }
-.icon-hover:hover,
-.icon-hover:focus,
-.clients-item:hover,
-.clients-item:focus {
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.icon-box:hover svg,
+.icon-box:focus svg {
   fill: var(--accent-color);
+}
+.icon-box:hover,
+.icon-box:focus {
   border-color: var(--accent-color);
 }
 
