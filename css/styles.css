@@ -436,6 +436,40 @@ img {
 .adress a:focus {
   color: var(--alt-accent);
 }
+
+.footer-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-contacts li + li {
+  margin-left: 10px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.footer-icon svg {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+}
+.footer-icon:hover svg,
+.team-icon:focus svg {
+  fill: var(--body-color);
+}
+.footer-icon:hover,
+.footer-icon:focus {
+  background-color: var(--accent-color);
+}
+
 /* стилизация кнопок */
 .pf-buttons {
   color: black;
