@@ -339,7 +339,7 @@ img {
 .team-icon:focus {
   background-color: var(--accent-color);
 }
-
+/* clients section */
 .clients-section {
   margin-top: 0;
   padding-top: 94px;
@@ -411,8 +411,6 @@ img {
   margin-top: 9px;
 }
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: var(--back-color);
   font-weight: 400;
   font-size: 14px;
@@ -436,15 +434,32 @@ img {
 .adress a:focus {
   color: var(--alt-accent);
 }
-.join-us-block {
+.contacts-block {
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  justify-content: flex-start;
+}
+.link-block {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.join-us-block {
+  margin-left: 70px;
+  margin-top: 0;
+  padding-top: 75px;
+  padding-bottom: 97px;
+}
+.footer-contacts-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--body-color);
 }
 .footer-contacts {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .footer-contacts li + li {
@@ -458,15 +473,17 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  background-color: #44454e;
 }
 
 .footer-icon svg {
-  fill: #afb1b8;
+  fill: var(--body-color);
   width: 20px;
   height: 20px;
 }
+
 .footer-icon:hover svg,
-.team-icon:focus svg {
+.footer-icon:focus svg {
   fill: var(--body-color);
 }
 .footer-icon:hover,
@@ -603,5 +620,5 @@ img {
 .pf-img {
   margin-top: 0;
   margin-bottom: 20px;
-  width: 368px;
+  width: 367px;
 }
