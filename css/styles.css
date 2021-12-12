@@ -436,7 +436,11 @@ img {
 .adress a:focus {
   color: var(--alt-accent);
 }
-
+.join-us-block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 .footer-contacts {
   display: flex;
   align-items: center;
