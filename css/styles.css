@@ -130,12 +130,7 @@ img {
   height: 12px;
   fill: var(--text-block);
 }
-/* .info-icon::before {
-  content: "";
-  margin-right: 10px;
-  width: 16px;
-  height: 12px;
-} */
+
 .info a {
   color: var(--text-block);
   font-weight: 500;
