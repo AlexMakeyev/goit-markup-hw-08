@@ -18,6 +18,7 @@ html {
   --team-button-color: #f5f4fa;
   --logo-add-color: #000000;
   --border-color: #ececec;
+  --clients-color: #afb1b8;
 }
 /* бэк цвет #2F303A */
 /* цвет заголовков #212121 */
@@ -126,11 +127,16 @@ img {
 }
 .info-icon {
   margin-right: 10px;
-  width: 16px;
-  height: 12px;
   fill: var(--text-block);
 }
-
+.info-icon.smartphone {
+  width: 10px;
+  height: 16px;
+}
+.info-icon.envelope {
+  width: 16px;
+  height: 12px;
+}
 .info a {
   color: var(--text-block);
   font-weight: 500;
@@ -353,7 +359,7 @@ img {
 .client-4,
 .client-5,
 .client-6 {
-  fill: var(--text-block);
+  fill: var(--clients-color);
 }
 .client-1 {
   width: 41px;
@@ -385,7 +391,7 @@ img {
   justify-content: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--clients-color);
   border-radius: 4px;
 }
 .icon-box:hover svg,
