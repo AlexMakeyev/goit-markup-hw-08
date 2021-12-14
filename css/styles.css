@@ -145,12 +145,19 @@ img {
 .info-icon.smartphone {
   width: 10px;
   height: 16px;
+  position: absolute;
+  left: -20px;
+  bottom: 0px;
 }
 .info-icon.envelope {
   width: 16px;
   height: 12px;
+  position: absolute;
+  left: -26px;
+  bottom: 2px;
 }
 .info a {
+  position: relative;
   color: var(--text-block);
   font-weight: 500;
   font-size: 14px;
