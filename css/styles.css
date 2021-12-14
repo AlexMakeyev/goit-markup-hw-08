@@ -119,6 +119,7 @@ img {
   content: "";
   display: block;
   position: relative;
+  margin-bottom: -4px;
   top: 30px;
   bottom: auto;
   width: 100%;
