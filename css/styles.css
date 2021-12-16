@@ -19,6 +19,8 @@ html {
   --logo-add-color: #000000;
   --border-color: #ececec;
   --clients-color: #afb1b8;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --time: 250ms;
 }
 /* бэк цвет #2F303A */
 /* цвет заголовков #212121 */
@@ -102,10 +104,6 @@ img {
   letter-spacing: 0.02em;
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
-  color: var(--accent-color);
-}
 .site-nav {
   display: flex;
   padding-top: 32px;
@@ -115,17 +113,31 @@ img {
 .site-nav .nav-item + .nav-item {
   margin-left: 50px;
 }
-.active-link:hover::after {
+.nav-item {
+  position: relative;
+}
+.active-link {
+  transition: var(--cubic) var(--time) color;
+}
+.active-link::after {
   content: "";
   display: block;
-  position: relative;
-  margin-bottom: -4px;
-  top: 30px;
+  position: absolute;
+  top: 47px;
   bottom: auto;
   width: 100%;
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 4px;
+  transform: scaleX(0);
+  transition: transform var(--cubic) var(--time);
+}
+.active-link:hover,
+.active-link:focus {
+  color: var(--accent-color);
+}
+.active-link:focus::after {
+  transform: scaleX(1);
 }
 
 /* info */
@@ -163,6 +175,10 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: var(--cubic) var(--time) color;
+}
+.info a svg {
+  transition: var(--cubic) var(--time) fill;
 }
 .info a:hover,
 .info a:focus {
@@ -515,6 +531,7 @@ img {
 
 /* стилизация кнопок */
 .pf-buttons {
+  position: relative;
   color: black;
   background-color: var(--team-button-color);
   padding: 6px, 22px;
@@ -527,6 +544,9 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  transition: var(--cubic) var(--time) color,
+    var(--cubic) var(--time) background-color,
+    var(--cubic) var(--time) box-shadow;
 }
 .pf-buttons:hover,
 .pf-buttons:focus {
@@ -581,6 +601,9 @@ img {
   line-height: 1.9;
   letter-spacing: 0.06em;
   cursor: pointer;
+  transition: var(--cubic) var(--time) color,
+    var(--cubic) var(--time) background-color,
+    var(--cubic) var(--time) drop-shadow;
 }
 .s-button:hover,
 .s-button:focus {
@@ -632,18 +655,62 @@ img {
 }
 .pf-deco:hover,
 .pf-deco:focus {
-  /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16); */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .pf-deco {
   display: block;
+  position: relative;
 }
 .pf-img {
   margin-top: 0;
   margin-bottom: 20px;
   width: 367px;
 }
+.drop-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.drop-desc {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--body-color);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform var(--cubic) var(--time);
+  pointer-events: none;
+}
+
+.drop-box::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform var(--time) var(--cubic);
+  pointer-events: none;
+}
+.drop-box:hover .drop-desc {
+  opacity: 1;
+  transform: translateY(0);
+}
+.drop-box:hover::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* модальное окно */
 .drop-window {
   position: fixed;
