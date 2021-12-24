@@ -66,14 +66,22 @@
                             </label>
                             
                         
-                        <label for="client-comment" class="modal-label">Комментарий</label>
-                        <textarea name="client-comment" id="client-comment" rows="10" placeholder="Введите текст">
+                        <label class="modal-item">Комментарий
+                            <textarea name="client-comment" rows="10" placeholder="Введите текст"></textarea>
+                        </label>        
                         </textarea>
+                        <label class="checkbox">Соглашаюсь с рассылкой и принимаю <a href="#" class="modal-link">Условия договора</a>
+                            <input type="checkbox" name="agreement" class="checkbox-item">
+                            <svg class="checkbox-rectangle">
+                                <use href="images/icons2.svg#icon-rectangle" width="16" height="15"></use>
+                            </svg>
+                            <svg class="checkbox-icon">
+                                <use href="images/icons2.svg#icon-check" width="16" height="15"></use>
+                            </svg>
+                        </label>
+                            
                         
-                        <fieldset>
-                            <input type="checkbox" name="checkbox" class="checkbox-item" id="checkbox">
-                            <label for="checkbox">Соглашаюсь с рассылкой и принимаю <a href="#" class="modal-link">Условия договора</a></label>
-                        </fieldset>
+                        
                         
                         
                         <button type="submit" class="modal-button">Отправить</button>
