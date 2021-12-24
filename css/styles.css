@@ -570,6 +570,68 @@ img {
 .footer-icon:focus {
   background-color: var(--accent-color);
 }
+/* форма подписки */
+/* .subscribe {
+  margin-left: 93px;
+  margin-top: 0;
+  padding-top: 75px;
+  padding-bottom: 97px;
+} */
+.subscribe-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 93px;
+  margin-top: 0;
+  padding-top: 75px;
+  padding-bottom: 97px;
+}
+.subscribe-input {
+  margin-top: 20px;
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: var(--cubic) var(--time) filter;
+}
+.subscribe-label:focus-within .subscribe-input {
+  outline: var(--accent-color) 1px solid;
+}
+.subscribe-icon {
+  position: absolute;
+  bottom: 13px;
+  right: 29px;
+  width: 24px;
+  height: 24px;
+  fill: var(--body-color);
+}
+.button-text {
+  position: absolute;
+  display: inline-block;
+  text-align: left;
+  top: 11px;
+  left: 29px;
+}
+
+.subscribe-label {
+  margin-top: 0;
+  width: 358px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--body-color);
+}
 
 /* стилизация кнопок */
 .pf-buttons {
@@ -626,9 +688,9 @@ img {
   text-align: center;
 }
 /* studio button */
+.subscribe-button,
 .modal-button,
 .s-button {
-  align-self: center;
   width: 200px;
   height: 50px;
   border: 0;
@@ -648,8 +710,25 @@ img {
     var(--cubic) var(--time) background-color,
     var(--cubic) var(--time) drop-shadow;
 }
+.subscribe-button,
+.modal-button {
+  margin-bottom: 0;
+}
+.subscribe-button {
+  position: absolute;
+  right: -212px;
+  bottom: 0;
+  transform: translateY(-97px);
+}
+
 .s-button:hover,
 .s-button:focus {
+  background-color: var(--alt-accent);
+  color: var(--body-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
   background-color: var(--alt-accent);
   color: var(--body-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
