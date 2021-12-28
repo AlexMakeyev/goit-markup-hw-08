@@ -571,21 +571,16 @@ img {
   background-color: var(--accent-color);
 }
 /* форма подписки */
-/* .subscribe {
-  margin-left: 93px;
-  margin-top: 0;
-  padding-top: 75px;
-  padding-bottom: 97px;
-} */
+
+.subscribe {
+  display: flex;
+}
 .subscribe-form {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 93px;
   margin-top: 0;
-  padding-top: 75px;
-  padding-bottom: 97px;
+  margin-left: 93px;
 }
 .subscribe-input {
   margin-top: 20px;
@@ -608,22 +603,25 @@ img {
 }
 .subscribe-icon {
   position: absolute;
-  bottom: 13px;
+  top: 13px;
   right: 29px;
   width: 24px;
   height: 24px;
   fill: var(--body-color);
 }
+
 .button-text {
   position: absolute;
   display: inline-block;
   text-align: left;
-  top: 11px;
+  top: 10px;
   left: 29px;
 }
 
 .subscribe-label {
   margin-top: 0;
+  padding-top: 72px;
+  padding-bottom: 94px;
   width: 358px;
   font-weight: 700;
   font-size: 14px;
@@ -715,10 +713,10 @@ img {
   margin-bottom: 0;
 }
 .subscribe-button {
-  position: absolute;
-  right: -212px;
-  bottom: 0;
-  transform: translateY(-97px);
+  position: relative;
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 12px;
 }
 
 .s-button:hover,
@@ -939,10 +937,10 @@ img {
 .modal-item svg {
   position: absolute;
   bottom: 0;
-  left: 12px;
-  transform: translateY(-12px);
-  width: 18px;
-  height: 18px;
+  left: 14px;
+  transform: translateY(-13px);
+  width: 15px;
+  height: 13px;
   fill: var(--heading-color);
 }
 .modal-input-item:focus-within ~ .form-icon {
@@ -983,6 +981,8 @@ textarea::placeholder {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .modal-link {
+  display: inline-block;
+  margin-left: 2px;
   color: var(--accent-color);
   text-decoration: underline;
 }
