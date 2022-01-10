@@ -999,6 +999,7 @@ textarea::placeholder {
   line-height: 1.7;
   letter-spacing: 0.03em;
   border: 0;
+  cursor: pointer;
 }
 .checkbox svg {
   width: 16px;
