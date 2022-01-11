@@ -96,7 +96,7 @@ img {
 }
 /* nav section */
 
-.site-nav a {
+.site-nav__link {
   color: var(--heading-color);
   font-weight: 500;
   font-size: 14px;
@@ -110,16 +110,16 @@ img {
   margin-left: 93px;
   padding-bottom: 32px;
 }
-.site-nav .nav-item + .nav-item {
+.site-nav__item:not(:first-child) {
   margin-left: 50px;
 }
-.nav-item {
+.site-nav__item {
   position: relative;
 }
-.active-link {
+.site-nav__link {
   transition: var(--cubic) var(--time) color;
 }
-.active-link::after {
+.site-nav__link::after {
   content: "";
   display: block;
   position: absolute;
@@ -132,11 +132,11 @@ img {
   transform: scaleX(0);
   transition: transform var(--cubic) var(--time);
 }
-.active-link:hover,
-.active-link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--accent-color);
 }
-.active-link:focus::after {
+.site-nav__link:focus::after {
   transform: scaleX(1);
 }
 
@@ -147,7 +147,7 @@ img {
   padding-bottom: 32px;
   margin-left: auto;
 }
-.info .info-item + .info-item {
+.info-item:not(:first-child) {
   margin-left: 50px;
 }
 .info-icon {
@@ -168,7 +168,7 @@ img {
   left: -26px;
   bottom: 2px;
 }
-.info a {
+.info-link {
   position: relative;
   color: var(--text-block);
   font-weight: 500;
@@ -177,15 +177,15 @@ img {
   letter-spacing: 0.02em;
   transition: var(--cubic) var(--time) color;
 }
-.info a svg {
+.info-link svg {
   transition: var(--cubic) var(--time) fill;
 }
-.info a:hover,
-.info a:focus {
+.info-link:hover,
+.info-link:focus {
   color: var(--accent-color);
 }
-.info a:hover svg,
-.info a:focus svg {
+.info-link:hover svg,
+.info-link:focus svg {
   fill: var(--accent-color);
 }
 
@@ -220,7 +220,7 @@ img {
   width: 696px;
 }
 /* details section */
-.details-section-title {
+.details-section__title {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 700;
@@ -231,21 +231,22 @@ img {
   text-transform: uppercase;
   color: var(--heading-color);
 }
-.details-list p {
-  margin: 0;
-}
-.details-list {
+
+.details-section__list {
   display: flex;
   align-items: center;
 }
-.details-list .det-item + .det-item {
+.details-section__item:not(:first-child) {
   margin-left: 30px;
 }
-.det-item {
+.details-section_item {
   width: 270px;
 }
+.details-section_text {
+  margin-left: 0;
+}
 
-.det-svg {
+.details-section__svg {
   margin-top: 0;
   margin-bottom: 30px;
   padding-top: 25px;
@@ -269,7 +270,7 @@ img {
   display: none;
 }
 /* about section */
-.about-section-title {
+.about-section__title {
   color: var(--heading-color);
   margin-top: 0;
   margin-bottom: 50px;
@@ -283,17 +284,17 @@ img {
   margin-top: 0;
   padding-bottom: 94px;
 }
-.about-list {
+.about-section__list {
   display: flex;
   align-items: center;
 }
-.about-list .ab-item + .ab-item {
+.about-section__item:not(:first-child) {
   margin-left: 30px;
 }
-.ab-item {
+.about-section__item {
   position: relative;
 }
-.ab-item > p {
+.about-section__text {
   position: absolute;
   left: 86px;
   bottom: 27px;
@@ -305,7 +306,7 @@ img {
   text-transform: uppercase;
   color: var(--body-color);
 }
-.ab-item::before {
+.about-section__item::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -322,8 +323,8 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.team-section-title,
-.clients-section-title {
+.team-section__title,
+.clients-section__title {
   color: var(--heading-color);
   margin-top: 0;
   margin-bottom: 50px;
@@ -333,12 +334,12 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team-list {
+.team-section__list {
   display: flex;
   align-items: center;
   text-align: center;
 }
-.team-list .team-item + .team-item {
+.team-item:not(:first-child) {
   margin-left: 30px;
 }
 .team-txt {
@@ -374,7 +375,7 @@ img {
   margin-top: 16px;
   padding-bottom: 30px;
 }
-.team-contacts li + li {
+.team-contacts__item:not(:first-child) {
   margin-left: 10px;
 }
 
@@ -411,10 +412,10 @@ img {
   padding-top: 94px;
   padding-bottom: 100px;
 }
-.clients {
+.clients-section__list {
   display: flex;
 }
-.clients li + li {
+.clients-section__item:not(:first-child) {
   margin-left: 30px;
 }
 
