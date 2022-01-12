@@ -379,7 +379,7 @@ img {
   margin-left: 10px;
 }
 
-.team-social-link {
+.team-contacts__social {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -388,22 +388,22 @@ img {
   border-radius: 50%;
 }
 
-.team-icon {
+.team-contacts__icon {
   transition: var(--time) var(--cubic) background-color;
 }
 
-.team-icon svg {
+.team-contacts__icon svg {
   fill: #afb1b8;
   width: 20px;
   height: 20px;
   transition: var(--time) var(--cubic) fill;
 }
-.team-icon:hover svg,
-.team-icon:focus svg {
+.team-contacts__icon:hover svg,
+.team-contacts__icon:focus svg {
   fill: var(--body-color);
 }
-.team-icon:hover,
-.team-icon:focus {
+.team-contacts__icon:hover,
+.team-contacts__icon:focus {
   background-color: var(--accent-color);
 }
 /* clients section */
