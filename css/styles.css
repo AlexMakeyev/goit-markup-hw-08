@@ -196,7 +196,7 @@ img {
   background-color: var(--back-color);
   text-align: center;
 }
-.hero-back {
+.hero-section__background {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
@@ -207,7 +207,7 @@ img {
   background-size: cover;
   background-position: center;
 }
-.hero-text {
+.hero-section__text {
   margin-top: 0;
   margin-bottom: 30px;
   padding-top: 200px;
@@ -239,10 +239,10 @@ img {
 .details-section__item:not(:first-child) {
   margin-left: 30px;
 }
-.details-section_item {
+.details-section__item {
   width: 270px;
 }
-.details-section_text {
+.details-section__text {
   margin-left: 0;
 }
 
@@ -339,10 +339,10 @@ img {
   align-items: center;
   text-align: center;
 }
-.team-item:not(:first-child) {
+.team-section__item:not(:first-child) {
   margin-left: 30px;
 }
-.team-txt {
+.team-section__text {
   margin-top: 0;
   margin-bottom: 10px;
   color: var(--heading-color);
@@ -351,7 +351,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-.team-pos {
+.team-section__pos {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 400;
@@ -359,10 +359,10 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-.team-img {
+.team-section__img {
   margin-bottom: 30px;
 }
-.team-item {
+.team-section__item {
   background-color: var(--body-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -451,7 +451,7 @@ img {
   width: 94px;
   height: 44px;
 }
-.icon-box {
+.clients-section__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -462,15 +462,15 @@ img {
   transform: rotateY(360deg);
   transition: var(--time) var(--cubic) border-color;
 }
-.icon-box svg {
+.clients-section__icon svg {
   transition: var(--time) var(--cubic) fill;
 }
-.icon-box:hover svg,
-.icon-box:focus svg {
+.clients-section__icon:hover svg,
+.clients-section__icon:focus svg {
   fill: var(--accent-color);
 }
-.icon-box:hover,
-.icon-box:focus {
+.clients-section__icon:hover,
+.clients-section__icon:focus {
   border-color: var(--accent-color);
   transform: rotateY(0);
   transition: transform 3s var(--cubic);
@@ -481,7 +481,7 @@ img {
   font-style: normal;
   font-weight: 400;
 }
-.adress li + li {
+.adress__list:not(:first-child) {
   margin-top: 9px;
 }
 .footer {
@@ -504,29 +504,29 @@ img {
 .footer-adr {
   color: var(--body-color);
 }
-.adress a {
+.adress__link {
   transition: var(--time) var(--cubic) color;
 }
-.adress a:hover,
-.adress a:focus {
+.adress__link:hover,
+.adress__link:focus {
   color: var(--alt-accent);
 }
 .contacts-block {
   display: flex;
   justify-content: flex-start;
 }
-.link-block {
+.contacts-block__links {
   margin-top: 0;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.join-us-block {
+.social-block {
   margin-left: 70px;
   margin-top: 0;
   padding-top: 75px;
   padding-bottom: 97px;
 }
-.footer-contacts-title {
+.social-block__title {
   margin-top: 0;
   margin-bottom: 20px;
   font-weight: 700;
@@ -536,15 +536,15 @@ img {
   text-transform: uppercase;
   color: var(--body-color);
 }
-.footer-contacts {
+.social-block__contacts {
   display: flex;
 }
 
-.footer-contacts li + li {
+.social-block__link:not(:first-child) {
   margin-left: 10px;
 }
 
-.footer-social-link {
+.social-block__info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -553,22 +553,22 @@ img {
   border-radius: 50%;
   background-color: #44454e;
 }
-.footer-icon {
+.social__icon {
   transition: var(--time) var(--cubic) background-color;
 }
-.footer-icon svg {
+.social__icon svg {
   fill: var(--body-color);
   width: 20px;
   height: 20px;
   transition: var(--time) var(--cubic) fill;
 }
 
-.footer-icon:hover svg,
-.footer-icon:focus svg {
+.social__icon:hover svg,
+.social__icon:focus svg {
   fill: var(--body-color);
 }
-.footer-icon:hover,
-.footer-icon:focus {
+.social__icon:hover,
+.social__icon:focus {
   background-color: var(--accent-color);
 }
 /* форма подписки */
@@ -583,7 +583,7 @@ img {
   margin-top: 0;
   margin-left: 93px;
 }
-.subscribe-input {
+.subscribe-form__input {
   margin-top: 20px;
   padding: 15px 16px;
   width: 358px;
@@ -599,10 +599,10 @@ img {
   color: rgba(255, 255, 255, 0.6);
   transition: var(--cubic) var(--time) filter;
 }
-.subscribe-label:focus-within .subscribe-input {
+.subscribe-form__label:focus-within .subscribe-form__input {
   outline: var(--accent-color) 1px solid;
 }
-.subscribe-icon {
+.subscribe-form__icon {
   position: absolute;
   top: 13px;
   right: 29px;
@@ -610,16 +610,7 @@ img {
   height: 24px;
   fill: var(--body-color);
 }
-
-.button-text {
-  position: absolute;
-  display: inline-block;
-  text-align: left;
-  top: 10px;
-  left: 29px;
-}
-
-.subscribe-label {
+.subscribe-form__label {
   margin-top: 0;
   padding-top: 72px;
   padding-bottom: 94px;
@@ -630,6 +621,14 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--body-color);
+}
+
+.button-text {
+  position: absolute;
+  display: inline-block;
+  text-align: left;
+  top: 10px;
+  left: 29px;
 }
 
 /* стилизация кнопок */
@@ -852,7 +851,7 @@ img {
   opacity: 0;
   pointer-events: none;
 }
-.window {
+.modal-window {
   position: absolute;
   overflow: hidden;
   top: 50%;
@@ -866,7 +865,7 @@ img {
   border-radius: 4px;
 }
 
-.window-item {
+.modal-window__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -881,23 +880,16 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: var(--cubic) var(--time) fill;
 }
-.window-item svg {
+.modal-window__item svg {
   width: 18px;
   height: 18px;
 }
-.window-item svg:hover,
-.window-item svg:focus {
+.modal-window__item svg:hover,
+.modal-window__item svg:focus {
   fill: var(--accent-color);
 }
 /* стилизиция формы модального окна */
-.modal-form {
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-  width: 100%;
-  background-color: inherit;
-}
-.modal-title {
+.modal-window__title {
   display: block;
   margin-top: 40px;
   font-weight: 700;
@@ -907,7 +899,15 @@ img {
   color: var(--heading-color);
   letter-spacing: 0.03em;
 }
-.modal-item {
+.modal-form {
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  background-color: inherit;
+}
+
+.modal-form__item {
   position: relative;
   display: block;
   text-align: left;
@@ -917,14 +917,14 @@ img {
   letter-spacing: 0.01em;
   color: var(--text-block);
 }
-.modal-item:first-child {
+.modal-form__item:first-child {
   margin-top: 12px;
 }
-.modal-item:not(:first-child) {
+.modal-form__item:not(:first-child) {
   margin-top: 10px;
 }
 
-.modal-input-item {
+.modal-form__input {
   display: block;
   margin-top: 4px;
   padding-left: 42px;
@@ -935,7 +935,7 @@ img {
   cursor: pointer;
 }
 
-.modal-item svg {
+.modal-form__item svg {
   position: absolute;
   bottom: 0;
   left: 14px;
@@ -944,16 +944,22 @@ img {
   height: 13px;
   fill: var(--heading-color);
 }
-.modal-input-item:focus-within ~ .form-icon {
+.modal-form__input:focus-within ~ .modal-form__icon {
   fill: var(--accent-color);
   transition: var(--cubic) var(--time) fill;
 }
-.modal-input-item:focus-within {
+.modal-form__input:focus-within {
   outline: var(--accent-color) 1px solid;
   transition: var(--cubic) var(--time) var(--accent-color);
 }
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--alt-accent);
+  color: var(--body-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
 
-textarea {
+.modal-form__textarea {
   resize: none;
   margin-top: 4px;
   width: 100%;
@@ -963,11 +969,11 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
 }
-textarea:focus-within {
+.modal-form__textarea:focus-within {
   outline: solid 1px var(--accent-color);
   transition: var(--time) var(--cubic) var(--accent-color);
 }
-textarea::placeholder {
+.modal-form__textarea::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
@@ -975,18 +981,6 @@ textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-button:hover,
-.modal-button:focus {
-  background-color: var(--alt-accent);
-  color: var(--body-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-}
-.modal-link {
-  display: inline-block;
-  margin-left: 4px;
-  color: var(--accent-color);
-  text-decoration: underline;
-}
 .checkbox {
   position: relative;
   display: flex;
@@ -1002,17 +996,23 @@ textarea::placeholder {
   border: 0;
   cursor: pointer;
 }
+.checkbox__link {
+  display: inline-block;
+  margin-left: 4px;
+  color: var(--accent-color);
+  text-decoration: underline;
+}
 .checkbox svg {
   width: 16px;
   height: 15px;
 }
-.checkbox-item {
+.checkbox__item {
   position: absolute;
   bottom: 100%;
   left: 0;
   appearance: none;
 }
-.checkbox-icon {
+.checkbox__icon {
   display: block;
   position: absolute;
   width: 16;
@@ -1023,7 +1023,7 @@ textarea::placeholder {
   opacity: 0;
   border-radius: 3px;
 }
-.checkbox-rectangle {
+.checkbox__rectangle {
   display: block;
   position: absolute;
   width: 16;
@@ -1033,11 +1033,11 @@ textarea::placeholder {
   transform: translate(40%, 25%);
   opacity: 1;
 }
-.checkbox-item:checked ~ .checkbox-icon {
+.checkbox__item:checked ~ .checkbox__icon {
   opacity: 1;
   transition: var(--time) var(--cubic) opacity;
 }
-.checkbox-item:checked + .checkbox-rectangle {
+.checkbox__item:checked + .checkbox__rectangle {
   opacity: 0;
   transition: var(--time) var(--cubic) opacity;
 }
