@@ -219,6 +219,32 @@ img {
   text-transform: uppercase;
   width: 696px;
 }
+.hero-button {
+  width: 200px;
+  height: 50px;
+  border: 0;
+  margin-top: 0;
+  margin-bottom: 200px;
+  padding: 10px, 32px;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--body-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: var(--cubic) var(--time) color,
+    var(--cubic) var(--time) background-color,
+    var(--cubic) var(--time) drop-shadow;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--alt-accent);
+  color: var(--body-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
 /* details section */
 .details-section__title {
   margin-top: 0;
@@ -622,8 +648,27 @@ img {
   text-transform: uppercase;
   color: var(--body-color);
 }
-
-.button-text {
+.subscribe-button {
+  width: 200px;
+  height: 50px;
+  border: 0;
+  margin-top: 0;
+  margin-bottom: 200px;
+  padding: 10px, 32px;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--body-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: var(--cubic) var(--time) color,
+    var(--cubic) var(--time) background-color,
+    var(--cubic) var(--time) drop-shadow;
+}
+.subscribe-button__text {
   position: absolute;
   display: inline-block;
   text-align: left;
@@ -632,7 +677,7 @@ img {
 }
 
 /* стилизация кнопок */
-.pf-buttons {
+.portfolio-buttons {
   position: relative;
   color: black;
   background-color: var(--team-button-color);
@@ -650,37 +695,37 @@ img {
     var(--cubic) var(--time) background-color,
     var(--cubic) var(--time) box-shadow;
 }
-.pf-buttons:hover,
-.pf-buttons:focus {
+.portfolio-buttons:hover,
+.portfolio-buttons:focus {
   background-color: var(--alt-accent);
   color: var(--body-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.pf-b-size-all {
+.portfolio-buttons__all {
   width: 73px;
   height: 38px;
 }
-.pf-b-size-web {
+.portfolio-buttons__web {
   width: 128px;
   height: 38px;
 }
-.pf-b-size-app {
+.portfolio-buttons__app {
   width: 145px;
   height: 38px;
 }
-.pf-b-size-des {
+.portfolio-buttons__des {
   width: 103px;
   height: 38px;
 }
-.pf-b-size-mar {
+.portfolio-buttons__mar {
   width: 130px;
   height: 38px;
 }
-.button-item .pf-buttons + .pf-buttons {
+.portfolio-buttons:not(:first-child) {
   margin-left: 8px;
 }
-.button-item {
+.portfolio-buttons__item {
   padding-top: 94px;
   margin-bottom: 50px;
   text-align: center;
@@ -732,7 +777,7 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 /* стили портфолио */
-.pf-title {
+.portfolio__title {
   margin-top: 0;
   margin-bottom: 4px;
   padding-left: 24px;
@@ -742,7 +787,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.pf-text {
+.portfolio__text {
   margin: 0;
   padding-left: 24px;
   padding-bottom: 20px;
@@ -752,14 +797,14 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
-.main-pf {
+.portfolio__main {
   display: flex;
   flex-wrap: wrap;
   margin-top: 0;
   padding-bottom: 94px;
   align-items: center;
 }
-.pf-item {
+.portfolio__item {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -767,29 +812,26 @@ img {
   border-color: var(--border-color);
   border-style: solid;
 }
-.pf-item:nth-child(3n) {
+.portfolio__item:nth-child(3n) {
   margin-right: 0;
 }
-.pf-item:nth-child(n + 7) {
+.portfolio__item:nth-child(n + 7) {
   margin-bottom: 0;
 }
-.pf-deco:hover,
-.pf-deco:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.pf-deco {
+.portfolio__deco {
   display: block;
   position: relative;
 }
-.pf-img {
+.portfolio__deco:hover,
+.portfolio__deco:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio__img {
   margin-top: 0;
   margin-bottom: 20px;
   width: 367px;
 }
-.drop-box-position {
-  position: relative;
-}
-
 .drop-box {
   position: absolute;
   top: 0;
@@ -798,7 +840,11 @@ img {
   height: 100%;
   overflow: hidden;
 }
-.drop-description {
+.drop-box__position {
+  position: relative;
+}
+
+.drop-box__description {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -829,11 +875,11 @@ img {
   overflow: hidden;
 }
 
-.pf-deco:hover .drop-box::before {
+.portfolio__deco:hover .drop-box::before {
   opacity: 1;
   transform: translateY(0);
 }
-.pf-deco:hover .drop-description {
+.portfolio__deco:hover .drop-box__description {
   opacity: 1;
   transform: translateY(0);
 }
@@ -951,6 +997,26 @@ img {
 .modal-form__input:focus-within {
   outline: var(--accent-color) 1px solid;
   transition: var(--cubic) var(--time) var(--accent-color);
+}
+.modal-button {
+  width: 200px;
+  height: 50px;
+  border: 0;
+  margin-top: 0;
+  margin-bottom: 200px;
+  padding: 10px, 32px;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--body-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: var(--cubic) var(--time) color,
+    var(--cubic) var(--time) background-color,
+    var(--cubic) var(--time) drop-shadow;
 }
 .modal-button:hover,
 .modal-button:focus {
