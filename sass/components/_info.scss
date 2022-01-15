@@ -1,0 +1,58 @@
+.info {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: auto;
+}
+.info-item:not(:first-child) {
+  margin-left: 50px;
+}
+.info-icon {
+  margin-right: 10px;
+  fill: $textBlock;
+  &.smartphone {
+    width: 10px;
+    height: 16px;
+    position: absolute;
+    left: -20px;
+    bottom: 0px;
+  }
+  &.envelope {
+    width: 16px;
+    height: 12px;
+    position: absolute;
+    left: -26px;
+    bottom: 2px;
+  }
+  & {
+    transition: $cubic $time fill;
+  }
+  &:hover {
+    fill: $accentColor;
+  }
+  &:focus {
+    fill: $accentColor;
+  }
+}
+.info-link {
+  position: relative;
+  color: $textBlock;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: $cubic $time color;
+  &:hover,
+  :focus {
+    color: $accentColor;
+  }
+  &:hover .info-icon {
+    fill: $accentColor;
+  }
+  &:focus .info-icon {
+    fill: $accentColor;
+  }
+}
+.info-icon {
+  transition: $cubic $time fill;
+}

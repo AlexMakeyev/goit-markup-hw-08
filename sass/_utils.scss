@@ -1,6 +1,6 @@
 body {
-  background-color: var(--body-color);
-  color: var(--text-block);
+  background-color: $bodyColor;
+  color: $textBlock;
   font-family: "Roboto", sans-serif;
 }
 h1,
