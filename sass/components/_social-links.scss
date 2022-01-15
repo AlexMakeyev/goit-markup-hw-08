@@ -1,0 +1,112 @@
+// Соц сети команды
+.team-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  padding-bottom: 30px;
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.team-contacts__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.team-contacts__icon {
+  transition: $time $cubic background-color;
+  &:hover {
+    background-color: $accentColor;
+  }
+  &:focus {
+    background-color: $accentColor;
+  }
+  & .team_svg {
+    fill: $socialLinkcolor;
+    width: 20px;
+    height: 20px;
+    transition: $time $cubic fill;
+  }
+  &:hover .team_svg {
+    fill: $bodyColor;
+  }
+  &:focus .team_svg {
+    fill: $bodyColor;
+  }
+}
+// Соц сети футера
+.social-block {
+  margin-left: 70px;
+  margin-top: 0;
+  padding-top: 75px;
+  padding-bottom: 97px;
+}
+.social-block__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $bodyColor;
+}
+.social-block__contacts {
+  display: flex;
+}
+
+.social-block__link:not(:first-child) {
+  margin-left: 10px;
+}
+
+.social-block__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $socialFoootercolor;
+}
+.social__icon {
+  transition: $time $cubic background-color;
+  & .social_svg {
+    fill: $bodyColor;
+    width: 20px;
+    height: 20px;
+    transition: $time $cubic fill;
+  }
+  &:hover .social_svg {
+    fill: $bodyColor;
+  }
+  &:focus .social_svg {
+    fill: $bodyColor;
+  }
+  &:hover {
+    background-color: $accentColor;
+  }
+  &:focus {
+    background-color: $accentColor;
+  }
+}
+.social__icon .social_svg {
+  fill: $bodyColor;
+  width: 20px;
+  height: 20px;
+  transition: $time $cubic fill;
+}
+
+.social__icon:hover .social_svg,
+.social__icon:focus .social_svg {
+  fill: $bodyColor;
+}
+.social__icon:hover,
+.social__icon:focus {
+  background-color: $accentColor;
+}
