@@ -1,7 +1,7 @@
 body {
   background-color: $bodyColor;
   color: $textBlock;
-  font-family: "Roboto", sans-serif;
+  font-family: $mainFont;
 }
 h1,
 h2,
@@ -25,11 +25,19 @@ img {
   display: block;
 }
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  @media screen and (min-width: 480px) {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    width: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 .hidden {
   display: none;

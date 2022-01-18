@@ -13,35 +13,45 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header container">
+    <header class=" header container">
         <a href="#" class="logo"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
-        <nav>
-            <ul class="site-nav">
-                <li class="site-nav__item">
-                    <a href="#" class="site-nav__link">Студия</a>
-                </li>
-                <li class="site-nav__item">
-                    <a href="portfolio.html" class="site-nav__link">Портфолио</a>
-                </li>
-                <li class="site-nav__item">
-                    <a href="#footer" class="site-nav__link">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <ul class="info ">
-            <li class="info-item"> 
+        <div class="nav-mobile header container">
+            <nav>
+                <ul class="site-nav">
+                    <li class="site-nav__item">
+                        <a href="#" class="site-nav__link">Студия</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="portfolio.html" class="site-nav__link">Портфолио</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="#footer" class="site-nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        
+            <ul class="info ">
+                <li class="info-item">
                     <a href="mailto:info@devstudio.com" class="info-link">
                         <svg class="info-icon envelope">
                             <use href="images/icons.svg#icon-envelope" width="16" height="12"></use>
-                    </svg>info@devstudio.com</a>
-            </li>
-            <li class="info-item">
-                <a href="tel:+380961111111" class="info-link">
-                    <svg class="info-icon smartphone">
-                        <use href="images/icons.svg#icon-smartphone" width="10" height="16"></use>
-                </svg>+38 096 111 11 11</a>
-            </li>
-        </ul>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="info-item">
+                    <a href="tel:+380961111111" class="info-link">
+                        <svg class="info-icon smartphone">
+                            <use href="images/icons.svg#icon-smartphone" width="10" height="16"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+            <button class="mobile-button is-open" type="button" aria-expanded="true" aria-controls="mobile-container" data-menu-button>
+                <svg class="mobile-button__icon" width="40" height="40" aria-label="mobile menu switch">
+                    <use class="icon-close" href="images/icons2.svg#icon-close"></use>
+                    <use class="icon-menu" href="images/icons2.svg#icon-menu"></use>
+                </svg>
+            </button>
+        <div class="mobile-container is-open" id="mobile-container" data-menu>content</div>    
     </header>
     <!-- Main content -->
     <main>
@@ -87,7 +97,7 @@
                         <button type="submit" class="modal-button">Отправить</button>
                      </form>
                      <a href="#" class="modal-window__item" aria-label="close window" data-modal-close>
-                         <svg>
+                         <svg class="modal-window__svg">
                              <use href="images/icons2.svg#icon-close" width="18" height="18"></use>
                          </svg>
                      </a>
@@ -402,5 +412,6 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile.js"></script>
 </body>
 </html>

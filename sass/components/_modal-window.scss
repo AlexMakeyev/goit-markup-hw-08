@@ -23,6 +23,16 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+.modal-window__title {
+  display: block;
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: $headingColor;
+  letter-spacing: 0.03em;
+}
 
 .modal-window__item {
   display: flex;
@@ -38,26 +48,18 @@
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: $cubic $time fill;
+  & .modal-window__svg {
+    width: 18px;
+    height: 18px;
+  }
+  & .modal-window__svg:hover {
+    fill: $accentColor;
+  }
+  & .modal-window__svg:focus {
+    fill: $accentColor;
+  }
 }
-.modal-window__item svg {
-  width: 18px;
-  height: 18px;
-}
-.modal-window__item svg:hover,
-.modal-window__item svg:focus {
-  fill: $accentColor;
-}
-/* стилизиция формы модального окна */
-.modal-window__title {
-  display: block;
-  margin-top: 40px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  color: $headingColor;
-  letter-spacing: 0.03em;
-}
+
 .modal-form {
   margin: 0 auto;
   padding-left: 40px;
@@ -75,12 +77,21 @@
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: $textBlock;
-}
-.modal-form__item:first-child {
-  margin-top: 12px;
-}
-.modal-form__item:not(:first-child) {
-  margin-top: 10px;
+  &:first-child {
+    margin-top: 12px;
+  }
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+  & .modal-form__icon {
+    position: absolute;
+    bottom: 0;
+    left: 14px;
+    transform: translateY(-13px);
+    width: 15px;
+    height: 13px;
+    fill: $headingColor;
+  }
 }
 
 .modal-form__input {
@@ -92,49 +103,14 @@
   border: rgba(33, 33, 33, 0.2) 1px solid;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.modal-form__item svg {
-  position: absolute;
-  bottom: 0;
-  left: 14px;
-  transform: translateY(-13px);
-  width: 15px;
-  height: 13px;
-  fill: $headingColor;
-}
-.modal-form__input:focus-within ~ .modal-form__icon {
-  fill: $accentColor;
-  transition: $cubic $time fill;
-}
-.modal-form__input:focus-within {
-  outline: $accentColor 1px solid;
-  transition: $cubic $time $accentColor;
-}
-.modal-button {
-  width: 200px;
-  height: 50px;
-  border: 0;
-  margin-top: 0;
-  margin-bottom: 200px;
-  padding: 10px, 32px;
-  border-radius: 4px;
-  background-color: $accentColor;
-  color: $bodyColor;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  transition: $cubic $time color, $cubic $time background-color,
-    $cubic $time drop-shadow;
-}
-.modal-button:hover,
-.modal-button:focus {
-  background-color: $altAccent;
-  color: $bodyColor;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  &:focus-within ~ .modal-form__icon {
+    fill: $accentColor;
+    transition: $cubic $time fill;
+  }
+  &:focus-within {
+    outline: $accentColor 1px solid;
+    transition: $cubic $time $accentColor;
+  }
 }
 
 .modal-form__textarea {
@@ -146,17 +122,17 @@
   border: rgba(33, 33, 33, 0.2) 1px solid;
   border-radius: 4px;
   cursor: pointer;
-}
-.modal-form__textarea:focus-within {
-  outline: solid 1px $accentColor;
-  transition: $cubic $time $accentColor;
-}
-.modal-form__textarea::placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:focus-within {
+    outline: solid 1px $accentColor;
+    transition: $cubic $time $accentColor;
+  }
 }
 
 .checkbox {
@@ -166,7 +142,7 @@
   padding: 0;
   margin: 20px auto;
   text-align: center;
-  color: var(--text-block);
+  color: $textBlock;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -180,21 +156,26 @@
   color: $accentColor;
   text-decoration: underline;
 }
-.checkbox svg {
-  width: 16px;
-  height: 15px;
-}
+
 .checkbox__item {
   position: absolute;
   bottom: 100%;
   left: 0;
   appearance: none;
+  &:checked ~ .checkbox__icon {
+    opacity: 1;
+    transition: $cubic $time opacity;
+  }
+  &:checked + .checkbox__rectangle {
+    opacity: 0;
+    transition: $cubic $time opacity;
+  }
 }
 .checkbox__icon {
   display: block;
   position: absolute;
-  width: 16;
-  height: 15;
+  width: 16px;
+  height: 15px;
   top: 0;
   left: 0;
   transform: translate(40%, 25%);
@@ -204,18 +185,10 @@
 .checkbox__rectangle {
   display: block;
   position: absolute;
-  width: 16;
-  height: 15;
+  width: 16px;
+  height: 15px;
   top: 0;
   left: 0;
   transform: translate(40%, 25%);
   opacity: 1;
-}
-.checkbox__item:checked ~ .checkbox__icon {
-  opacity: 1;
-  transition: $cubic $time opacity;
-}
-.checkbox__item:checked + .checkbox__rectangle {
-  opacity: 0;
-  transition: $cubic $time opacity;
 }

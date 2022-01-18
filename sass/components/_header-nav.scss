@@ -1,5 +1,21 @@
 .header {
-  display: flex;
+  @media screen and (min-width: 480px) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $borderColor;
+    background-color: $bodyColor;
+  }
+
   align-items: center;
   border-bottom: 1px;
   border-bottom-style: solid;
@@ -48,5 +64,21 @@
   position: relative;
   &:not(:first-child) {
     margin-left: 50px;
+  }
+}
+.nav-mobile {
+  display: none;
+}
+.mobile-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translate(-50% -50%);
+  display: none;
+  width: 480px;
+  height: 100vh;
+  background-color: $bodyColor;
+  &.is-open {
+    display: block;
   }
 }
