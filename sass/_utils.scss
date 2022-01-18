@@ -32,11 +32,11 @@ img {
     padding-left: 15px;
     padding-right: 15px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
     width: auto;
   }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
 .hidden {

@@ -13,9 +13,16 @@
 </head>
 <body>
     <!-- Header -->
-    <header class=" header container">
-        <a href="#" class="logo"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
-        <div class="nav-mobile header container">
+    <header class="header container">
+        <div class="logo"><a href="#"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a></div>
+        <button class="mobile-button is-open" type="button" aria-expanded="false" aria-controls="nav-mobile"
+            data-menu-button>
+            <svg class="mobile-button__icon" width="40" height="40" aria-label="mobile menu switch">
+                <use class="icon-menu" href="images/icons2.svg#icon-menu"></use>
+                <use class="icon-close" href="images/icons2.svg#icon-close"></use>
+            </svg>
+        </button>
+        <div class="nav-mobile is-open" id="nav-mobile" data-menu>
             <nav>
                 <ul class="site-nav">
                     <li class="site-nav__item">
@@ -38,20 +45,14 @@
                         </svg>info@devstudio.com</a>
                 </li>
                 <li class="info-item">
-                    <a href="tel:+380961111111" class="info-link">
+                    <a href="tel:+380961111111" class="info-link info-item__tel">
                         <svg class="info-icon smartphone">
                             <use href="images/icons.svg#icon-smartphone" width="10" height="16"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
-            <button class="mobile-button is-open" type="button" aria-expanded="true" aria-controls="mobile-container" data-menu-button>
-                <svg class="mobile-button__icon" width="40" height="40" aria-label="mobile menu switch">
-                    <use class="icon-close" href="images/icons2.svg#icon-close"></use>
-                    <use class="icon-menu" href="images/icons2.svg#icon-menu"></use>
-                </svg>
-            </button>
-        <div class="mobile-container is-open" id="mobile-container" data-menu>content</div>    
+               
     </header>
     <!-- Main content -->
     <main>
