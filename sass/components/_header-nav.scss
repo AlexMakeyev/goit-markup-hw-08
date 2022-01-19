@@ -98,3 +98,41 @@
     display: flex;
   }
 }
+.nav-mobile__contacts {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    display: flex;
+    margin-top: 64px;
+    padding-left: 40px;
+    padding-bottom: 48px;
+    & .nav-mobile__link:not(:first-child) {
+      padding-left: 10px;
+    }
+    & .nav-mobile__link:not(:last-child) {
+      padding-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    & .nav-mobile__link {
+      color: $accentColor;
+    }
+    & .nav-mobile__link {
+      color: $accentColor;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22;
+      letter-spacing: 0.02em;
+    }
+    .nav-mobile__link a {
+      color: $accentColor;
+      transition: color $cubic $time;
+      &:hover {
+        color: $textBlock;
+      }
+      &:focus {
+        color: $textBlock;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

@@ -1,4 +1,7 @@
 .about-section {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    display: none;
+  }
   margin-top: 0;
   padding-bottom: 94px;
 }
