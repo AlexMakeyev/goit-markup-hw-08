@@ -1,0 +1,84 @@
+.clients-section {
+  margin-top: 0;
+  padding-top: 94px;
+  padding-bottom: 100px;
+}
+.clients-section__title {
+  color: $headingColor;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.clients-section__list {
+  display: flex;
+}
+.clients-section__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.client-1,
+.client-2,
+.client-3,
+.client-4,
+.client-5,
+.client-6 {
+  fill: $clientsColor;
+}
+.client-1 {
+  width: 41px;
+  height: 47px;
+}
+.client-2 {
+  width: 40px;
+  height: 52px;
+}
+.client-3 {
+  width: 43px;
+  height: 41px;
+}
+.client-4 {
+  width: 84px;
+  height: 41px;
+}
+.client-5 {
+  width: 63px;
+  height: 45px;
+}
+.client-6 {
+  width: 94px;
+  height: 44px;
+}
+.clients-section__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $clientsColor;
+  border-radius: 4px;
+  transform: rotateY(360deg);
+  transition: $time $cubic border-color;
+  & .client_svg {
+    transition: $time $cubic fill;
+  }
+  &:hover .client_svg {
+    fill: $accentColor;
+  }
+  &:focus .client_svg {
+    fill: $accentColor;
+  }
+  &:hover {
+    border-color: $accentColor;
+    transform: rotateY(0);
+    transition: transform 3s $cubic;
+  }
+  &:focus {
+    border-color: $accentColor;
+    transform: rotateY(0);
+    transition: transform 3s $cubic;
+  }
+}

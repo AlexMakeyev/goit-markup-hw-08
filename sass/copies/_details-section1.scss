@@ -1,9 +1,9 @@
 .details-section {
-  @media screen and (max-width: 767px) {
-    display: block;
+  @media screen and (min-width: 480px) {
     margin-top: 0;
     padding-top: 60px;
     padding-bottom: 60px;
+
     width: auto;
   }
   @media screen and (min-width: 768px) {
@@ -16,7 +16,7 @@
   }
 }
 .details-section__text {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     margin-left: 0;
     font-weight: 400;
     font-size: 14px;
@@ -28,6 +28,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    min-height: 75px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -39,7 +40,7 @@
 }
 
 .details-section__title {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     margin-top: 0;
     margin-bottom: 10px;
     font-weight: 700;
@@ -54,15 +55,17 @@
   @media screen and (min-width: 768px) {
     text-align: left;
   }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .details-section__list {
-  @media screen and (max-width: 767px) {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    // width: 100%;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -75,15 +78,15 @@
 }
 
 .details-section__item {
-  @media screen and (max-width: 767px) {
-    max-width: 450px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
     &:not(:first-child) {
       margin-top: 30px;
     }
     margin-left: 0;
   }
   @media screen and (min-width: 768px) {
-    max-width: 354px;
+    width: 354px;
     &:nth-child(2n) {
       margin-left: 30px;
     }
@@ -96,7 +99,7 @@
     }
   }
   @media screen and (min-width: 1200px) {
-    max-width: 270px;
+    width: 270px;
     &:not(:first-child) {
       margin-left: 30px;
     }
@@ -105,32 +108,25 @@
     }
   }
 }
-.details-section__icon {
-  @media screen and (max-width: 767px) {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+
+.details-section__svg {
+  @media screen and (min-width: 480px) {
     margin-top: 0;
     margin-bottom: 30px;
     padding-top: 25px;
-    padding-bottom: 25px;
-    width: 100%;
-    max-height: 120px;
+    padding-left: 190px;
+    width: 450px;
+    height: 120px;
     background-color: $teamBtncolor;
   }
   @media screen and (min-width: 768px) {
     padding-top: 25px;
     padding-left: 142px;
-    max-width: 354px;
+    width: 354px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 270px;
+    width: 270px;
     padding-top: 25px;
     padding-left: 100px;
   }
-  // & .details-section__svg {
-  //   display: inline-block;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
 }

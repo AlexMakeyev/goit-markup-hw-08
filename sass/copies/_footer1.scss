@@ -1,0 +1,43 @@
+.adress {
+  font-style: normal;
+  font-weight: 400;
+}
+.adress__list:not(:first-child) {
+  margin-top: 9px;
+}
+.footer {
+  background-color: $backColor;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+.footer-logo {
+  margin-bottom: 20px;
+}
+.footer-logo .logo {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.footer-text {
+  color: $specColor;
+}
+.footer-adr {
+  color: $bodyColor;
+}
+.adress__link {
+  transition: $time $cubic color;
+}
+.adress__link:hover,
+.adress__link:focus {
+  color: $altAccent;
+}
+.contacts-block {
+  display: flex;
+  justify-content: flex-start;
+}
+.contacts-block__links {
+  margin-top: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}

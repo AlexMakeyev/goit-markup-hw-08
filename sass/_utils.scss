@@ -2,6 +2,8 @@ body {
   background-color: $bodyColor;
   color: $textBlock;
   font-family: $mainFont;
+  margin: 0;
+  padding: 0;
 }
 h1,
 h2,
@@ -25,16 +27,20 @@ img {
   display: block;
 }
 .container {
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
 
   @media screen and (min-width: 768px) {
-    display: flex;
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 .hidden {

@@ -1,5 +1,6 @@
 .logo {
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  display: inline-block;
+  @media screen and (max-width: 767px) {
     padding-top: 16px;
     padding-bottom: 16px;
     font-family: $addFont;
