@@ -9,10 +9,20 @@
     line-height: 1.16;
     letter-spacing: 0.03em;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    font-family: $addFont;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    width: 145px;
+  }
+  @media screen and (min-width: 1200px) {
     padding-top: 24px;
     padding-bottom: 25px;
-
+    font-family: $addFont;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
