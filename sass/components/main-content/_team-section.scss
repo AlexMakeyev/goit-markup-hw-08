@@ -6,6 +6,12 @@
     padding-bottom: 60px;
   }
   @media screen and (min-width: 768px) {
+    background-color: $teamBtncolor;
+    margin-top: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -22,12 +28,14 @@
     letter-spacing: 0.03em;
   }
   @media screen and (min-width: 768px) {
-    margin-bottom: 50px;
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    color: $headingColor;
   }
 }
 
@@ -39,6 +47,12 @@
     text-align: center;
   }
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
   }
 }
 
@@ -54,10 +68,14 @@
     letter-spacing: 0.03em;
   }
   @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: $headingColor;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    text-align: center;
   }
 }
 .team-section__pos {
@@ -70,17 +88,23 @@
     letter-spacing: 0.03em;
   }
   @media screen and (min-width: 768px) {
+    color: $textBlock;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    text-align: center;
   }
 }
 .team-section__img {
   @media screen and (max-width: 767px) {
     width: 100%;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 354px;
     margin-bottom: 30px;
   }
 }
@@ -96,8 +120,18 @@
     }
   }
   @media screen and (min-width: 768px) {
-    &:not(:first-child) {
-      margin-left: 30px;
-    }
+    max-width: 354px;
+    background-color: $bodyColor;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    // &:not(:first-child) {
+    //   margin-left: 30px;
+    // }
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+  @media (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
   }
 }

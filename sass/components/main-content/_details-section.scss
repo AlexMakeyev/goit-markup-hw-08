@@ -8,6 +8,8 @@
   }
   @media screen and (min-width: 768px) {
     width: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
     margin-top: 0;
@@ -52,7 +54,16 @@
     color: $headingColor;
   }
   @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    text-transform: uppercase;
     text-align: left;
+    color: $headingColor;
   }
 }
 
@@ -65,8 +76,9 @@
     // width: 100%;
   }
   @media screen and (min-width: 768px) {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
   @media screen and (min-width: 1200px) {
     align-items: center;
@@ -83,26 +95,14 @@
     margin-left: 0;
   }
   @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
     max-width: 354px;
-    &:nth-child(2n) {
-      margin-left: 30px;
-    }
-
-    &:nth-child(-n + 2) {
-      margin-bottom: 30px;
-    }
-    &:not(:first-child) {
-      margin-top: 0;
-    }
   }
   @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    flex-basis: calc(100% / 4 - 30px);
     max-width: 270px;
-    &:not(:first-child) {
-      margin-left: 30px;
-    }
-    &:not(:first-child) {
-      margin-top: 0;
-    }
   }
 }
 .details-section__icon {
@@ -119,9 +119,11 @@
     background-color: $teamBtncolor;
   }
   @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
     padding-top: 25px;
     padding-left: 142px;
     max-width: 354px;
+    background-color: $teamBtncolor;
   }
   @media screen and (min-width: 1200px) {
     max-width: 270px;

@@ -15,18 +15,21 @@
     margin-right: auto;
     margin-left: auto;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199) {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   @media screen and (min-width: 1200px) {
   }
 }
 
 .hero-section__text {
-  display: inline-block;
+  display: block;
   @media screen and (max-width: 767px) {
-    display: inline-block;
     margin-top: 0;
     margin-bottom: 30px;
+    margin-left: 60px;
     color: $bodyColor;
     font-weight: 900;
     font-size: 26px;
@@ -36,13 +39,20 @@
     max-width: 360px;
   }
   @media screen and (min-width: 768px) {
-    font-size: 24px;
-    line-height: 1.75;
+    margin-top: 0;
+    margin-left: 204px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $bodyColor;
+    max-width: 360px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     font-size: 44px;
     line-height: 1.4;
-    width: 696px;
+    max-width: 696px;
   }
 }
