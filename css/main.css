@@ -6,6 +6,10 @@ body {
   padding: 0;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -169,10 +173,6 @@ img {
   .site-nav__item:not(:first-child) {
     margin-left: 50px;
   }
-}
-
-.nav-mobile {
-  z-index: 1;
 }
 
 @media screen and (max-width: 767px) {
@@ -1184,8 +1184,15 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 767px) {
+  .drop-window {
+    padding: 93px 15px;
+    overflow-y: scroll;
+  }
 }
 
 .drop-window.is-hidden {
@@ -1194,15 +1201,6 @@ img {
 }
 
 .modal-window {
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1210,15 +1208,51 @@ img {
           border-radius: 4px;
 }
 
+@media screen and (max-width: 767px) {
+  .modal-window {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-window {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 528px;
+    max-height: 581px;
+  }
+}
+
 .modal-window__title {
   display: block;
-  margin-top: 40px;
+  padding-top: 40px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   color: #212121;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-window__title {
+    display: block;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #212121;
+    letter-spacing: 0.03em;
+  }
+}
+
+.modal-position {
+  position: relative;
 }
 
 .modal-window__item {
@@ -2475,7 +2509,7 @@ img {
   height: 50px;
   border: 0;
   margin-top: 0;
-  margin-bottom: 200px;
+  margin-bottom: 40px;
   padding: 10px, 32px;
   -webkit-border-radius: 4px;
           border-radius: 4px;
