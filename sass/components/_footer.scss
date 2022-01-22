@@ -9,12 +9,12 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
   }
-  & .logo {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
   @media screen and (min-width: 768px) {
     display: block;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-bottom: 20px;
   }
   & .logo {
@@ -47,6 +47,13 @@
       color: $specColor;
     }
   }
+  @media screen and (min-width: 1200px) {
+    & .adress__block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
 }
 .adress__list:not(:first-child) {
   margin-top: 9px;
@@ -70,6 +77,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 .contacts-block__links {
   @media screen and (max-width: 767px) {
@@ -81,6 +92,9 @@
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
   }
   margin-top: 0;
   padding-top: 60px;
