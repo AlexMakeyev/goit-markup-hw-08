@@ -175,6 +175,10 @@ img {
   }
 }
 
+.nav-mobile {
+  z-index: 1;
+}
+
 @media screen and (max-width: 767px) {
   .nav-mobile {
     display: none;
@@ -1217,7 +1221,7 @@ img {
 @media screen and (min-width: 768px) {
   .modal-window {
     position: absolute;
-    top: 75%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
