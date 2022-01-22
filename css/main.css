@@ -2009,20 +2009,23 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio__main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
 .portfolio__item {
-  margin-right: 30px;
   margin-bottom: 30px;
   border: 1px;
   border-color: #ececec;
   border-style: solid;
-}
-
-.portfolio__item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.portfolio__item:nth-child(n + 7) {
-  margin-bottom: 0;
 }
 
 @media screen and (max-width: 767px) {

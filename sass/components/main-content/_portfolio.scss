@@ -27,19 +27,23 @@
   @media screen and (max-width: 767px) {
     justify-content: center;
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .portfolio__item {
-  margin-right: 30px;
+  // margin-right: 30px;
   margin-bottom: 30px;
   border: 1px;
   border-color: $borderColor;
   border-style: solid;
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-  &:nth-child(n + 7) {
-    margin-bottom: 0;
-  }
+  // &:nth-child(3n) {
+  //   margin-right: 0;
+  // }
+  // &:nth-child(n + 7) {
+  //   margin-bottom: 0;
+  // }
   @media screen and (max-width: 767px) {
     flex-basis: calc(100% - 30px);
     margin-right: 0;
