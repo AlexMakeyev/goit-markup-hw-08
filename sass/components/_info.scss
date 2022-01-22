@@ -8,9 +8,11 @@
   }
 
   @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    margin-left: 305px;
     padding-top: 32px;
     padding-bottom: 32px;
-    margin-left: 305px;
   }
 }
 .info-item {
@@ -53,7 +55,13 @@
   }
 }
 .info-item__tel {
-  margin-top: 10px;
+  @media screen and (min-width: 768px) {
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
 .info-icon {
   margin-right: 10px;

@@ -22,6 +22,9 @@
     color: $bodyColor;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 // Subscribe
 .subscribe-button {
@@ -126,11 +129,9 @@
   margin-left: 8px;
 }
 .portfolio-buttons__item {
-  padding-top: 94px;
-  margin-bottom: 50px;
   text-align: center;
   @media screen and (max-width: 767px) {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     padding-top: 60px;
     margin-bottom: 40px;
@@ -140,6 +141,14 @@
     & .portfolio-buttons__des {
       margin-left: 0;
     }
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    margin-bottom: 50px;
   }
 }
 // Modal button

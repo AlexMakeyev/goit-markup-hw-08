@@ -23,8 +23,10 @@
   flex-wrap: wrap;
   margin-top: 0;
   padding-bottom: 94px;
-  align-items: center;
+
   @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
   @media screen and (min-width: 768px) {
@@ -33,19 +35,10 @@
   }
 }
 .portfolio__item {
-  // margin-right: 30px;
-  margin-bottom: 30px;
   border: 1px;
   border-color: $borderColor;
   border-style: solid;
-  // &:nth-child(3n) {
-  //   margin-right: 0;
-  // }
-  // &:nth-child(n + 7) {
-  //   margin-bottom: 0;
-  // }
   @media screen and (max-width: 767px) {
-    flex-basis: calc(100% - 30px);
     margin-right: 0;
     &:not(:first-child) {
       margin-top: 30px;
@@ -53,8 +46,9 @@
   }
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 3 - 30px);
   }
 }
@@ -73,7 +67,7 @@
 .portfolio__img {
   margin-top: 0;
   margin-bottom: 20px;
-  width: 367px;
+  max-width: 100%;
 }
 .drop-box {
   position: absolute;
