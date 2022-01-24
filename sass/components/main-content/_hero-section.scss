@@ -9,8 +9,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(to right, #2f303a66 40%, #2f303a66 40%),
-    url("../images/hero-back.jpg");
+  // background-image: linear-gradient(to right, #2f303a66 40%, #2f303a66 40%),
+  //   url("../images/hero-back.jpg");
   @media screen and (max-width: 767px) {
     background-image: linear-gradient(to right, #2f303a66 40%, #2f303a66 40%),
       url("../images/hero-back-mobile.jpg");
