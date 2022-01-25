@@ -132,16 +132,25 @@
 }
 .portfolio-buttons__item {
   text-align: center;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 380px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    margin-bottom: 40px;
+    & .portfolio-buttons:nth-child(2n + 1) {
+      margin-left: 0;
+    }
+    & .portfolio-buttons:nth-child(-n + 3) {
+      margin-bottom: 15px;
+    }
+  }
+  @media screen and (min-width: 380px) and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
     padding-top: 60px;
     margin-bottom: 40px;
     & .portfolio-buttons:nth-child(-n + 3) {
       margin-bottom: 15px;
-    }
-    & .portfolio-buttons:nth-child(3n + 1) {
-      margin-left: 0;
     }
   }
   @media screen and (min-width: 768px) {
